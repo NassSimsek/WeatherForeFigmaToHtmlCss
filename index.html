@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Figma To Html</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="d-flex flex-row flex-wrap justify-content-between align-items-center">
+                <div class="column">
+                    <span>Clear</span>
+                </div>
+                <div class="d-flex flex-row column-1" style="width: 30%;">
+                    <input type="text" class="form-control" list="list" placeholder="Choose the Location"
+                        style="width:100%">
+                    <datalist class="dtlist" id="list">
+                        <option>sdkjfdkjfh</option>
+                        <option>sdkjfdkjfh</option>
+                        <option>sdkjfdkjfh</option>
+                        <option>sdkjfdkjfh</option>
+                        <option>sdkjfdkjfh</option>
+                        <option>sdkjfdkjfh</option>
+                        <option>sdkjfdkjfh</option>
+                        <option>sdkjfdkjfh</option>
+                        <option>sdkjfdkjfh</option>
+                    </datalist>
+                    <img class="searchIcon" src="assets/icon/Search.svg">
+                </div>
+                <div class="column">
+                    <img src="assets/icon/logo.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="part-up" style="margin-top: 30px;">
+        <div class="container">
+            <div class="d-flex flex-row justify-content-between align-items-strecth right_midd_left ">
+                <div class="part-left">
+                    <div class="d-flex flex-row justify-content-center align-items-end status_degre">
+                        <div class="status">
+                            <img id="iconStatus" src="assets/icon/WeatherIcon - 2-39.svg">
+                        </div>
+                        <div class="degre">
+                            7°C
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between align-items-center hum_pre_wind">
+                        <div class="pre">
+                            <span>Precipitation:%0</span><span id="pre"></span>
+                        </div>
+                        <img src="assets/icon/Line.svg">
+                        <div class="hum">
+                            <span>Humudity:%72</span><span id="hum"></span>
+                        </div>
+                        <img src="assets/icon/Line.svg">
+                        <div class="wind">
+                            <span>Wind:2km/s</span><span id="wind"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="part-middle align-self-end">
+
+                </div>
+                <div class="part-right">
+                    <div class="d-flex flex-row justify-content-center season_city_date_day" style="height: 100%;">
+                        <div class="align-self-center SeasonIcon">
+                            <img src="assets/icon/amico.svg" alt="">
+                        </div>
+                        <div class="city_date_day">
+                            <div class="city_name">
+                                <span id="city">Ankara</span>
+                            </div>
+                            <div class="date">
+                                <span id="date">18.01.2023</span>
+                            </div>
+                            <div class="day">
+                                <span id="day">Wednesday</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mid-button" style="margin-top:20px;">
+        <div class="d-flex flex-row justify-content-center align-items-center  buttons">
+            <button type="button" class=" d-flex btn btn-lg btn_pre">
+                <div class="preIcon align-self-center" style="flex: 0 0 10%;"><img id="preIcon"
+                        src="assets/icon/pre.svg" alt=""></div>
+                <div class="preText" style="flex: 0 0 80%;">Previous</div>
+            </button>
+            <button type="button" class=" d-flex  btn btn-lg btn_next">
+                <div class="nextText" style="flex:0 0 80%">Next</div>
+                <div class="nextIcon align-self-center" style="flex:0 0 10%"><img id="nextIcon"
+                        src="assets/icon/next.svg" alt=""></div>
+            </button>
+        </div>
+    </section>
+
+    <section class="part-down">
+        <div class="container">
+            <div class="d-flex table-chart">
+                <div class="tableWeather " style="flex: 0 0 48.5%;">
+
+                </div>
+                <div class="chartWeather" style="flex: 0 0 48.5%;">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

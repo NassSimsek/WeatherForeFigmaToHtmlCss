@@ -1,0 +1,39 @@
+*{
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+
+}
+
+html,body,ol,ul{
+     margin:0;
+     padding: 25px;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+button{
+    border: none;
+}
+
+a{ 
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+figure{
+    margin: 0;
+}
+
+/* canvas yapısı chart.js kütüphaneisnde alındı ve direk değerler verilmiş sen onu değiştridin ve important yaptın aksi halde ne verirsen ver canvas nitelikleri senin veridkleini over rate ediyordu*/
+canvas{
+    height: 100% !important;
+    width: 100% !important;
+
+}

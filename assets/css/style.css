@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import './reboot.css';
+
+
+
+
+.searchIcon{
+    position: relative;
+    right:10%;
+}
+
+.part-right{
+    background-color: #442b72;
+    width: 45%;
+    border-radius:5px;
+}
+
+.part-middle{
+    background-color: #442b72;
+    /* margin-top:auto; */
+
+    height:85%;
+    width: 4%;
+    border-radius:5px;
+   
+}
+
+.part-left{
+    background-color: #442b72;
+    width: 45%;
+    border-radius:5px;
+    
+}
+
+.right_midd_left{
+   /* margin-top:30px;*/ /* onu kapsayan en dış containere verildi section up a aksi halde aslında margin red-mid-keft ile hemen bir üstündeki container arasında arka plan beyeaz olduğu için sen algılmadın*/
+    height:30vh;
+
+}
+
+.degre{
+    color: white;
+    font-size: 5em;
+    font-weight:1px;
+}
+.hum_pre_wind{
+    padding-top: 10px;
+    padding-left:30px;
+    padding-right: 30px;
+    color: white;
+}
+
+.city_date_day{
+    color: white;
+    font-size:1.5em;
+    position: relative;
+    left: 10%;
+    top :5%
+}
+
+#seasonIcon{
+    width: 100%;
+    max-width:500px;
+    min-width:50px;
+}
+
+.SeasonIcon{
+    position: relative;
+    left:5%;
+}
+
+.btn_pre{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    background-color: #FEDF96;
+    margin-right: 3%;
+    transition-duration:0s;
+    line-height: normal;
+    }
+
+.btn_pre:hover{
+    box-shadow: 5px 5px #442B72;
+}
+
+.btn_pre:active{
+    transform: translateY(3px) translateX(3px);
+    box-shadow:  2px 2px #211636;
+}
+
+
+
+.btn_next{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    background-color: #FEDF96;
+    transition-duration: 0s;
+    line-height: normal;
+}
+
+.btn_next:hover{
+     box-shadow:  5px 5px #442B72;
+}
+.btn_next:active{
+    transform: translateY(3px) translateX(3px);
+    box-shadow:  2px 2px #211636;
+}
+
+#preIcon{
+    position: relative;
+    
+}
+
+.mid-button{
+    margin-bottom: 20px;
+}
+
+.table-chart{
+    height: 30vh;
+}
+
+.tableWeather{
+ 
+    background-color:#FEDF96;
+    margin-right: 3%;
+}
+
+.chartWeather{
+    /*background-color: #442B72;*/
+}
